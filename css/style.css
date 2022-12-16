@@ -115,7 +115,7 @@ footer {
 div.conte4 {
   width: 100%;
   height: 600px;
-  background-image: url("../image/Index/3.png");
+  background-image: url("../image/index/3.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -452,7 +452,7 @@ div.contexcursiones {
 /* fin página Excursiones */
 /* comienzo página Contacto */
 div.imgcont {
-  background-image: url("../image/Contacto/1.png");
+  background-image: url("../image/contacto/1.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
