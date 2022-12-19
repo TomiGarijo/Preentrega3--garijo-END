@@ -1,0 +1,58 @@
+/*INICIO GENERAL PAGINA*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+    list-style: none;
+    text-decoration: none;
+    user-select: none;
+    list-style-type: none;
+}
+
+body {
+    background-color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+.color{
+    color: white; 
+ }
+ 
+ .enlace {
+     font-size: 20px;
+     color: white;
+ }
+
+ .btn {
+    font-weight: 500;
+    background-color: rgba(20, 88, 189, 1);
+    padding: 10px 15px;
+    border-radius: 20px;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.9);
+        color: black;
+        transition-duration: 0.3s;
+    }
+} 
+
+ .btn2 {
+     background-color: rgba(0, 0, 0, 0.5);
+     padding: 10px 15px;
+     border-radius: 20px;
+ }
+ 
+/*FIN GENERAL PAGINA*/
+
+@import "mixin.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "index.scss";
+@import "hoteles.scss";
+@import "vuelos.scss";
+@import "excursiones.scss";
+@import "contacto.scss";
+@import "responsive.scss";
