@@ -1,0 +1,326 @@
+/*RESPONSIVE*/
+/*NAV BAR - HEADER*/
+@media (min-width: 1201px) {
+    nav {
+        display: none;
+    }
+}
+
+@media (max-width:1200px) {
+    .conte1, .conte2, .conte3, .toggle-menu__checkbox {
+        display: none;
+    }
+
+    header {
+        background-color: rgb(66, 124, 212);
+        opacity: 1 !important;
+        box-shadow: 0 1px 5px black;
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        z-index: 2;
+        .main-menu {
+            width: 100%;
+            height: 100%;
+            .toggle-menu {
+                .toggle-menu__a {
+                    position: absolute;
+                    padding: 15px 30px;
+                    .toggle-menu__img {
+                        height: 70px;
+                        width: 100px;
+                    }
+                }
+                .toggle-menu__label { 
+                    float: right;
+                    margin: 35px 40px 0px 0px;
+                    cursor: pointer;
+                    .bars {
+                        width: 35px;
+                    }
+                }    
+                .main-menu__ul {
+                    background-color: rgb(66, 124, 212);
+                    border-bottom: 1px solid white;
+                    width: 100%;
+                    height: 500px;
+                    position: fixed;
+                    top: 95px;
+                    transform-origin: top;
+                    transform: scaleY(0);
+                    transition: all .5s; 
+                    @include flexcolumn;
+                    align-items: center;
+                    text-align: center;
+                    .main-menu__item {
+                        height: 73px;
+                        padding: 25px 0px !important;
+                        width: 240px;
+                        .main-menu__link {
+                            color: white;
+                            font-size: 20px;
+                            padding: 20px 0px !important;
+                            text-transform: uppercase;
+                            &:hover {
+                                color: black;
+                        }
+                        &:hover {
+                            border-bottom: 2px solid black;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+
+    #margin {
+        margin-top: 50px;
+    }
+
+    #toggle-menu-checkbox:checked ~ .main-menu__ul {
+        transform: scaleX(1);
+    }
+}
+}
+/*FIN NAV BAR - HEADER*/
+/*INICIO RESPONSIVE PAGINAS*/
+@media screen and (max-width:1100px) { 
+    section {
+        @include flexcolumn;
+        justify-content: center;
+    }
+
+    /* INICIO PAGINA INDEX */
+    div.conte5 {
+        display: flex;
+        justify-content: center;
+        justify-content: flex-start;
+        div.conte6 {
+            height: 250px;
+            width: 65%;
+            img {
+                height: 250px;
+            }
+        }
+    }
+
+    div.conte4 {
+        width: 100%;
+        @include flexcolumncentercenter;
+        margin-top: 60px;
+        h1 {
+            font-size: 40px;
+        }
+        h2 {
+            font-size: 30px;
+            padding-bottom: 30px;
+        }
+        div.busqueda {
+            margin-bottom: 20px;
+            form  {
+                width: auto;
+                @include flexcolumn;
+                align-items: center;
+                input {
+                    width: 99%;
+                }
+                div > .searchbtn {
+                    margin-top: 5px;
+                }
+            }
+        }
+    
+    }
+    /* FIN PAGINA INDEX */
+    /* INICIO PAGINA HOSPEDAJE */
+    div.contehotel {
+        display: flex;
+        @include flexcolumncentercenter;
+        width: 100%;
+        padding: 0;
+        h1 {
+            margin-top: 120px;
+        }
+        ul.lista {
+            @include flexcolumn;
+            padding: 0;
+            div.hotel {
+                width: 99%;
+                height: 350px;
+                h1 {
+                    margin-top: 20px;
+                }
+                img {
+                    margin: 0 25px;
+                }
+            }
+        }
+    }
+    /* FIN PAGINA HOSPEDAJE */
+    /* INICIO PAGINA VUELOS */
+    div.contevuelos {
+        h1 {
+            margin-top: 65px;
+            font-size: 30px;
+        }
+        div.exc {
+            @include flexcolumn;
+            align-items: center;
+            width: 80%;
+            height: auto;
+            .exc__img {
+                width: 100%;
+                height: 25%;
+                img {
+                    border-radius: 20px 20px 0px 0px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            h1, h2{
+                margin: 0;
+                padding: 0;
+            }
+            div {
+                @include flexcolumn;
+                align-items: center;
+                width: 100%;
+                height: 40%;
+                h1, p {
+                    font-size: 18px;
+                    padding: 0;
+                    margin-top: 12px;
+                    width: 95%;
+                }
+                p {
+                    margin-right: 0;
+                }
+                .btn2 {
+                    margin-top: 12px;
+                    margin-bottom: 12px;
+                }
+            }
+        }
+        div.conteinf {
+            height: auto;
+            h1 {
+                margin: 30px 0;
+            }
+            div.lista2 {
+                @include flexcolumn;
+                align-items: center;
+                div {
+                    margin: 0 0 30px 0;
+                    width: 60%;
+                    height: 350px;
+                    background-color:rgba(20, 88, 189, 1);
+                    text-align: center;
+                    border-radius: 20px;
+                    box-shadow: 0 1px 7px black;
+                    img {
+                        margin: 0;
+                        width: 100%;
+                        height: 60%;
+                        border-radius: 20px 20px 0 0;
+                    }
+                    h1 {
+                        margin-top: 20px;
+                        font-size: 20px;
+                        margin-bottom: 20px;
+                        padding: 10px 0 15px 0;
+                    }
+                    a {
+                        margin-top: 0;
+                        font-size: 15px;
+                    }
+                }
+            }
+
+        }
+    }
+    /* FIN PAGINA VUELOS */
+    /* COMIENZO PAGINA EXCURSIONES */
+    main {
+        div.contexcursiones {
+            div.video {
+                width: 70%;
+                height: 300px;
+                margin-top: 60px;
+            }
+            div.conteinf {
+                padding-bottom: 90px;
+                height: auto;
+                h1 {
+                    font-size: 25px;    
+                }
+                div.conteinf-div__1 {
+                    @include flexcolumn;
+                    height: auto;
+                    div {
+                        width: 100%;
+                        height: 300px;
+                        img {
+                            width: 100%;
+                            height: 300px;
+                            border-radius: 20px 20px 0 0;
+                        }
+                    }
+                    div.conteinf-div__2 {
+                        padding: 15px 0;
+                        width: 100%;
+                        p {
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    /* FIN PAGINA EXCURSIONES */
+    /* COMIENZO PAGINA CONTACTO */
+    div.imgcont {
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        div.imgcont_div{
+            width: 80%;
+            margin-top: 60px;
+            h1, h2 {
+                width: auto;
+                padding: 0 12px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            h1{
+                font-size: 30px;
+            }
+        }
+    }
+    div.before-contacto {
+        div.contacto {
+            width: auto;
+            form {
+                fieldset {
+                    width: 100%;
+                    @include flexcolumncentercenter;
+                    .input {
+                        margin-top: 15px !important;
+                    }
+                    .input, div, textarea {
+                        margin: 0 0 15px 0;
+                        width: 85%;
+                        &::placeholder {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+
+        }
+        
+    }
+    /* FIN PAGINA CONTACTO */
+}
+/*FIN RESPONSIVE PAGINAS*/

@@ -2,15 +2,15 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Comfortaa', cursive;
-  list-style: none;
-  text-decoration: none;
-  user-select: none;
-  list-style-type: none; }
+  box-sizing: border-box !important;
+  font-family: 'Comfortaa', cursive !important;
+  list-style: none !important;
+  text-decoration: none !important;
+  user-select: none !important;
+  list-style-type: none !important; }
 
 body {
-  background-color: white; }
+  background-color: white !important; }
 
 img {
   max-width: 100%; }
@@ -19,15 +19,15 @@ img {
   color: white; }
 
 .enlace {
-  font-size: 20px;
+  font-size: 20px !important;
   color: white; }
 
-.btn {
+.btn, .btn-cuenta {
   font-weight: 500;
   background-color: #1458bd;
   padding: 10px 15px;
   border-radius: 20px; }
-  .btn:hover {
+  .btn:hover, .btn-cuenta:hover {
     background-color: rgba(255, 255, 255, 0.9);
     color: black;
     transition-duration: 0.3s; }
@@ -41,6 +41,7 @@ img {
 /*INICIO HEADER*/
 header {
   width: 100%;
+  height: 139px;
   overflow: hidden;
   background-color: rgba(24, 98, 208, 0.9);
   opacity: 0.9;
@@ -52,18 +53,25 @@ header {
       height: 95px;
       width: 125px; }
   header .conte2 {
-    width: 700px;
+    width: 750px;
     float: left;
-    margin: 88px 0px 0px 70px; }
-    header .conte2 ul li {
-      display: inline;
-      padding: 0 15px; }
-      header .conte2 ul li a {
-        font-weight: 900;
-        font-size: 23px; }
-        header .conte2 ul li a:hover {
-          color: black;
-          transition-duration: 0.3s; }
+    padding: 0 !important;
+    margin: 88px 0px 0px 70px !important; }
+    header .conte2 ul {
+      padding: 0;
+      margin-bottom: 0;
+      height: 25px; }
+      header .conte2 ul li {
+        display: inline;
+        padding: 0 15px; }
+        header .conte2 ul li a {
+          font-weight: 900;
+          font-size: 23px !important; }
+          header .conte2 ul li a:hover {
+            color: black;
+            transition-duration: 0.3s; }
+  header #id_conte2 {
+    margin-top: 83px !important; }
   header .conte3 {
     float: right;
     margin: 85px 70px 0px 0px; }
@@ -170,50 +178,19 @@ div.conte5 {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  div.conte5 h1 {
+  div.conte5 h3 {
+    font-size: 30px !important;
     margin: 20px 0 30px 0; }
-  div.conte5 div {
-    width: 650px;
-    height: 300px;
-    position: relative; }
-    div.conte5 div .img {
-      width: 650px;
-      height: 300px;
-      border-radius: 20px;
-      box-shadow: 0 2px 5px black; }
-    div.conte5 div div.conte5_a {
-      height: auto;
-      position: absolute;
-      top: 90%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: grid;
-      place-items: center; }
-      div.conte5 div div.conte5_a .searchbtn {
-        width: 100px;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px;
-        background-color: rgba(24, 98, 208, 0.8);
-        color: white;
-        font-size: 20px; }
-        div.conte5 div div.conte5_a .searchbtn:hover {
-          color: black;
-          background-color: white;
-          transition-duration: 0.3s; }
-    div.conte5 div div.h3 {
-      height: auto;
-      position: absolute;
-      top: 78%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      div.conte5 div div.h3 h3 {
-        color: white; }
+  div.conte5 div.conte6 {
+    width: 50%;
+    height: 400px;
+    box-shadow: 0 3px 5px black;
+    border-radius: 5px;
+    margin-bottom: 30px; }
+    div.conte5 div.conte6 h5 {
+      margin-bottom: 15px; }
+    div.conte5 div.conte6 img {
+      border-radius: 5px; }
 
 /*FIN PAGINA INICIO*/
 /*COMIENZO PAGINA HOTELES*/
@@ -448,7 +425,8 @@ div.imgcont {
       font-size: 35px; }
     div.imgcont div.imgcont_div h2 {
       font-size: 30px;
-      width: 1000px; }
+      width: 1000px;
+      text-align: center; }
 
 div.before-contacto {
   background-color: rgba(24, 98, 208, 0.6);
@@ -565,12 +543,13 @@ div.before-contacto {
         align-items: center;
         text-align: center; }
         header .main-menu .toggle-menu .main-menu__ul .main-menu__item {
-          padding: 25px 0px;
+          height: 73px;
+          padding: 25px 0px !important;
           width: 240px; }
           header .main-menu .toggle-menu .main-menu__ul .main-menu__item .main-menu__link {
             color: white;
             font-size: 20px;
-            padding: 20px 0px;
+            padding: 20px 0px !important;
             text-transform: uppercase; }
             header .main-menu .toggle-menu .main-menu__ul .main-menu__item .main-menu__link:hover {
               color: black; }
@@ -593,16 +572,11 @@ div.before-contacto {
     display: flex;
     justify-content: center;
     justify-content: flex-start; }
-    div.conte5 div {
-      width: 70%;
-      height: 50%; }
-      div.conte5 div img {
-        width: 575px;
-        height: 225px; }
-      div.conte5 div div.h3 {
-        padding-bottom: 30px; }
-      div.conte5 div div a {
-        margin-bottom: 5px; }
+    div.conte5 div.conte6 {
+      height: 250px;
+      width: 65%; }
+      div.conte5 div.conte6 img {
+        height: 250px; }
   div.conte4 {
     width: 100%;
     display: flex;
